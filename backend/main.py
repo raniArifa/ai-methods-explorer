@@ -6,14 +6,14 @@ import os
 from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv ()
+load_dotenv()
 
 # Initialize FastAPI
-app = FastAPI ( title =" Learning AI Methods ")
+app = FastAPI(title ="Learning AI Methods")
 
 # Configure CORS
 app . add_middleware (
-CORSMiddleware ,
+CORSMiddleware,
 allow_origins =[" http :// localhost :3000"] ,
 allow_credentials = True ,
 allow_methods =["*"] ,
